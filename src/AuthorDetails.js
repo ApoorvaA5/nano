@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Input, Card, CardHeader, CardBody, CardFooter, Accordion, AccordionItem, Button } from '@nextui-org/react';
 
-const API_HOST = "https://https://open-library-api-apoorva.vercel.app/api/search";
+const API_HOST = "https://open-library-api-apoorva.vercel.app/api/search";
 
 function AuthorSearch() {
   const [query, setQuery] = useState('');
