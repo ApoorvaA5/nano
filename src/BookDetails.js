@@ -3,7 +3,7 @@ import { Card, CardBody, CardFooter, CardHeader, Spinner, Spacer, Button } from 
 import SearchForm from "./SearchForm";
 import BookInformations from "./BookInformations";
 
-const API_HOST = "http://localhost:3000/api/search";
+const API_HOST = "https://open-library-api-apoorva.vercel.app/api/search";
 
 function BookDetails() {
   const [query, setQuery] = useState("");
