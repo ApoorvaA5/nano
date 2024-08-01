@@ -1,56 +1,50 @@
-# Book Search React Client
+React Client for Book Search App_
+## Frontend
 
-This is the React client for the Book Search application, built using Create React App and styled with NextUI.
+This project uses React.js and NextUI to create a user interface with tabs for searching book details and author information.
 
-## Features
+### Tabs
 
-- Search for books and display the results.
-- Display details for a specific book.
-- Search for authors and display the results.
-- Display details for a specific author.
+The application features two tabs:
 
-## Prerequisites
+• **Book Details**: Search for book information
+• **Author Search**: Search for author information
 
-- Node.js (v14 or later)
-- npm (v6 or later)
+Both tabs utilize the same API endpoints to fetch data.
 
-## Getting Started
+Overview
 
-1. Clone the repository:
+This React client application allows users to search for books and authors, and view detailed information about each. It uses NextUI for styling components and interacts with the API server to fetch data.
 
-    ```bash
-    git clone https://github.com/yourusername/book-search-react-client.git
-    cd book-search-react-client
-    ```
+Setup
 
-2. Install dependencies:
+1. Clone the repository or copy the code into a new directory.
+2. Install dependencies using npm install or yarn install.
+3. Start the development server using npm start or yarn start.
 
-    ```bash
-    npm install
-    ```
 
-3. Start the development server:
+API Calls
 
-    ```bash
-    npm start
-    ```
+* GET ${API_HOST}/books?q=${query}&page=${page}&limit=1: Searches for books and returns a list of results.
+* GET ${API_HOST}/authors?q=${query}: Searches for authors and returns a list of results.
 
-4. The application will be running on `http://localhost:3000`.
+Environment Variables
 
-## Project Structure
+* API_HOST: The URL of the API server (default: http://localhost:3000/api/search)
 
-- `src/` - Contains the source code for the React application.
-  - `components/` - Reusable UI components.
-  - `pages/` - Page components for different routes.
-  - `services/` - API service functions to interact with the API server.
-- `public/` - Static assets.
-- `README.md` - Instructions on how to set up and run the client.
+Instructions
 
-## Styling
+1. Ensure the API server is running (see API server README for instructions).
+2. Start the React client development server using npm start or yarn start.
+3. Open a web browser and navigate to http://localhost:3000.
+4. Use the search bars to find books and authors, and click on items to view detailed information.
 
-This project uses [NextUI](https://nextui.org/) for styling the components.
+Dependencies
 
-## License
+* React
+* NextUI
+* Axios (for API calls)
 
-This project is licensed under the MIT License.
+
+Note: Make sure to replace the API_HOST variable with the correct URL if your API server is hosted elsewhere.
 
