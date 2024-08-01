@@ -3,7 +3,7 @@ import { NextUIProvider, Tabs, Tab } from '@nextui-org/react';
 import AuthorSearch from './AuthorDetails';
 import BookDetails from './BookDetails';
 
-function App() {
+function App()            {
   return (
     <NextUIProvider>
            <div className="App" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100vh', backgroundColor: '#f0f4f8', paddingTop: '2rem' }}>
